@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="300" viewBox="0 0 1200 300" fill="none">
+<defs>
+<linearGradient id="gold" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#F0D27A"/><stop offset="1" stop-color="#D4AF37"/></linearGradient>
+<linearGradient id="card" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#1C1F26"/><stop offset="1" stop-color="#15171C"/></linearGradient>
+<radialGradient id="glow" cx=".85" cy="0" r=".7"><stop offset="0" stop-color="#D4AF37" stop-opacity=".16"/><stop offset="1" stop-color="#D4AF37" stop-opacity="0"/></radialGradient>
+<pattern id="dots" width="24" height="24" patternUnits="userSpaceOnUse"><circle cx="2" cy="2" r="1.2" fill="#262931"/></pattern>
+</defs>
+<style>
+text{font-family:'Segoe UI','Helvetica Neue',Helvetica,Arial,sans-serif} .mono{font-family:'SFMono-Regular',Consolas,'Liberation Mono',Menlo,monospace}
+@keyframes up{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:none}}
+@keyframes fade{from{opacity:0}to{opacity:1}}
+@keyframes blink{0%,49%{opacity:1}50%,100%{opacity:0}}
+@keyframes pulse{0%{r:5;opacity:1}100%{r:16;opacity:0}}
+@keyframes dash{to{stroke-dashoffset:-40}}
+@keyframes grow{from{transform:scaleX(0)}to{transform:scaleX(1)}}
+.up{opacity:0;animation:up .9s cubic-bezier(.2,.7,.2,1) forwards}
+.fade{opacity:0;animation:fade 1s ease forwards}
+.flow{stroke-dasharray:6 8;animation:dash 1.2s linear infinite}
+</style>
+<rect x="1" y="1" width="1198" height="298" rx="24" fill="url(#card)" stroke="#2A2D35" stroke-width="2"/><rect x="1" y="1" width="1198" height="298" rx="24" fill="url(#dots)" opacity=".7"/><rect x="1" y="1" width="1198" height="298" rx="24" fill="url(#glow)"/>
+<path d="M220 98.0 H270" stroke="#4A4D55" stroke-width="2" class="flow"/>
+<path d="M450 98.0 H540" stroke="#4A4D55" stroke-width="2" class="flow"/>
+<path d="M690 98.0 H770" stroke="#4A4D55" stroke-width="2" class="flow"/>
+<path d="M950 98.0 H990" stroke="#4A4D55" stroke-width="2" class="flow"/>
+<text x="730.0" y="88.0" text-anchor="middle" class="mono" font-size="12" fill="#D4AF37">sim</text>
+<path d="M615 140.0 V200" stroke="#4A4D55" stroke-width="2" class="flow"/>
+<path d="M705 238 H860.0 V136" stroke="#4A4D55" stroke-width="2" class="flow"/>
+<text x="625" y="168.0" class="mono" font-size="12" fill="#9CA0A8">ainda não</text>
+<circle r="7" fill="#D4AF37"><animateMotion dur="4.5s" repeatCount="indefinite" path="M220 98.0 H990"/></circle>
+<circle r="15" fill="#D4AF37" opacity=".22"><animateMotion dur="4.5s" repeatCount="indefinite" path="M220 98.0 H990"/></circle>
+<g class="up" style="animation-delay:0.1s">
+<rect x="40" y="60" width="180" height="76" rx="16" fill="#0A0A0A" stroke="#D4AF37" stroke-width="1.5"/><rect x="40" y="60" width="180" height="76" rx="16" fill="none" stroke="#D4AF37" stroke-width="3" opacity="0">
+<animate attributeName="opacity" values="0;1;0" keyTimes="0;.1;.35" dur="4.5s" begin="0s" repeatCount="indefinite"/></rect>
+<text x="60" y="92" class="mono" font-size="12" fill="#D4AF37" letter-spacing="2">01</text>
+<text x="90" y="93" font-size="17" font-weight="700" fill="#F5F3EE" letter-spacing="2">TRIGGER</text>
+<text x="60" y="117" font-size="14" fill="#9CA0A8">tarefa repetitiva</text></g>
+<g class="up" style="animation-delay:0.2s">
+<rect x="270" y="60" width="180" height="76" rx="16" fill="#1C1F26" stroke="#2A2D35" stroke-width="1.5"/><rect x="270" y="60" width="180" height="76" rx="16" fill="none" stroke="#D4AF37" stroke-width="3" opacity="0">
+<animate attributeName="opacity" values="0;1;0" keyTimes="0;.1;.35" dur="4.5s" begin="0.9s" repeatCount="indefinite"/></rect>
+<text x="290" y="92" class="mono" font-size="12" fill="#D4AF37" letter-spacing="2">02</text>
+<text x="320" y="93" font-size="17" font-weight="700" fill="#F5F3EE" letter-spacing="2">MAPEAR</text>
+<text x="290" y="117" font-size="14" fill="#9CA0A8">entender o processo</text></g>
+<g class="up" style="animation-delay:.3s">
+<path d="M615 56.0 L690 98.0 L615 140.0 L540 98.0 Z" fill="#D4AF37"/>
+<text x="615" y="94.0" text-anchor="middle" font-size="13" font-weight="700" fill="#0A0A0A">dá pra</text>
+<text x="615" y="111.0" text-anchor="middle" font-size="13" font-weight="700" fill="#0A0A0A">automatizar?</text></g>
+<g class="up" style="animation-delay:0.4s">
+<rect x="770" y="60" width="180" height="76" rx="16" fill="#1C1F26" stroke="#2A2D35" stroke-width="1.5"/><rect x="770" y="60" width="180" height="76" rx="16" fill="none" stroke="#D4AF37" stroke-width="3" opacity="0">
+<animate attributeName="opacity" values="0;1;0" keyTimes="0;.1;.35" dur="4.5s" begin="2.9s" repeatCount="indefinite"/></rect>
+<text x="790" y="92" class="mono" font-size="12" fill="#D4AF37" letter-spacing="2">03</text>
+<text x="820" y="93" font-size="17" font-weight="700" fill="#F5F3EE" letter-spacing="2">WORKFLOW</text>
+<text x="790" y="117" font-size="14" fill="#9CA0A8">API + IA</text></g>
+<g class="up" style="animation-delay:0.5s">
+<rect x="990" y="60" width="170" height="76" rx="16" fill="#0A0A0A" stroke="#D4AF37" stroke-width="1.5"/><rect x="990" y="60" width="170" height="76" rx="16" fill="none" stroke="#D4AF37" stroke-width="3" opacity="0">
+<animate attributeName="opacity" values="0;1;0" keyTimes="0;.1;.35" dur="4.5s" begin="3.9s" repeatCount="indefinite"/></rect>
+<text x="1010" y="92" class="mono" font-size="12" fill="#D4AF37" letter-spacing="2">04</text>
+<text x="1040" y="93" font-size="17" font-weight="700" fill="#F5F3EE" letter-spacing="2">DONE</text>
+<text x="1010" y="117" font-size="14" fill="#9CA0A8">roda sozinho</text></g>
+<g class="up" style="animation-delay:0.6s">
+<rect x="525" y="200" width="180" height="76" rx="16" fill="#1C1F26" stroke="#2A2D35" stroke-width="1.5"/>
+<text x="545" y="232" class="mono" font-size="12" fill="#D4AF37" letter-spacing="2">↳</text>
+<text x="575" y="233" font-size="17" font-weight="700" fill="#F5F3EE" letter-spacing="2">CÓDIGO</text>
+<text x="545" y="257" font-size="14" fill="#9CA0A8">sob medida</text></g>
+</svg>
