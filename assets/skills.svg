@@ -25,7 +25,7 @@ text{font-family:'Segoe UI','Helvetica Neue',Helvetica,Arial,sans-serif} .mono{f
 <text x="37" y="130" font-size="14" fill="#6B6B6B">disparando o fluxo na hora</text>
 <circle cx="259" cy="42" r="4" fill="#C9A227"><animate attributeName="opacity" values=".15;1;.15" dur="3.2s" begin="0.0s" repeatCount="indefinite"/></circle></g>
 <g class="up" style="animation-delay:0.19s">
-<rect x="305" y="10" width="270" height="150" rx="18" fill="#0A0A0A" stroke="#0A0A0A" stroke-width="1.5"/>
+<rect x="305" y="10" width="270" height="150" rx="18" fill="#0A0A0A" stroke="#C9A227" stroke-width="1.5"/>
 <rect x="327" y="10" width="40" height="3" fill="url(#gold)"/>
 <text x="327" y="48" class="mono" font-size="13" fill="#C9A227" letter-spacing="2">02</text>
 <text x="327" y="82" font-size="19" font-weight="700" fill="#FFFFFF">IA no fluxo</text>
@@ -57,7 +57,7 @@ text{font-family:'Segoe UI','Helvetica Neue',Helvetica,Arial,sans-serif} .mono{f
 <text x="37" y="300" font-size="14" fill="#6B6B6B">SLA automáticos</text>
 <circle cx="259" cy="212" r="4" fill="#C9A227"><animate attributeName="opacity" values=".15;1;.15" dur="3.2s" begin="1.6s" repeatCount="indefinite"/></circle></g>
 <g class="up" style="animation-delay:0.55s">
-<rect x="305" y="180" width="270" height="150" rx="18" fill="#0A0A0A" stroke="#0A0A0A" stroke-width="1.5"/>
+<rect x="305" y="180" width="270" height="150" rx="18" fill="#0A0A0A" stroke="#C9A227" stroke-width="1.5"/>
 <rect x="327" y="180" width="40" height="3" fill="url(#gold)"/>
 <text x="327" y="218" class="mono" font-size="13" fill="#C9A227" letter-spacing="2">06</text>
 <text x="327" y="252" font-size="19" font-weight="700" fill="#FFFFFF">Agentes de IA</text>
