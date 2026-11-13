@@ -1,114 +1,87 @@
 <div align="center">
 
-<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=0:0f2027,50:203a43,100:2c5364&height=200&section=header&text=Cau%C3%A3%20Vitor&fontSize=56&fontColor=ffffff&fontAlignY=38&desc=Dev%20%C2%B7%20Automa%C3%A7%C3%A3o%20com%20IA%20%C2%B7%20Redes&descAlignY=60&descSize=18&animation=fadeIn" />
+<img width="100%" src="https://capsule-render.vercel.app/api?type=rect&color=0:0d1117,100:0b3d2e&height=150&section=header&text=%E2%9A%A1%20workflow%3A%20caua-vitor&fontSize=40&fontColor=3fb950&fontAlignY=45&desc=status%3A%20published%20%E2%97%8F%20running%2024%2F7&descSize=16&descAlignY=72&descColor=8b949e" />
 
-<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=20&pause=1200&color=4FC3F7&center=true&vCenter=true&width=560&lines=Automa%C3%A7%C3%A3o+%2B+IA+para+empresas+nos+EUA;Ci%C3%AAncia+da+Computa%C3%A7%C3%A3o+%40+Univertix;Sites%2C+apps+e+jogos+%F0%9F%8E%AE;Redes+e+infraestrutura+(Cisco)+%F0%9F%8C%90" />
-
-<br/>
-
-<a href="https://www.cauaravaiano.com.br"><img src="https://img.shields.io/badge/Portfólio-0f2027?style=for-the-badge&logo=googlechrome&logoColor=4FC3F7" /></a>
-<a href="https://github.com/CauaVitorDev"><img src="https://img.shields.io/badge/GitHub-203a43?style=for-the-badge&logo=github&logoColor=white" /></a>
-<img src="https://img.shields.io/badge/📍_Minas_Gerais-2c5364?style=for-the-badge" />
-<img src="https://img.shields.io/badge/BR-4FC3F7?style=for-the-badge" />
+<img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&size=16&pause=900&color=3FB950&width=620&lines=%5Btrigger%5D+novo+problema+recebido...;%5Baction%5D+mapeando+o+processo+manual...;%5Baction%5D+criando+workflow+%2B+IA...;%5Bsuccess%5D+processo+rodando+sozinho+%E2%9C%94" />
 
 </div>
 
-<br/>
-
-![](https://img.shields.io/badge/—_SOBRE_MIM-2c5364?style=flat-square)
-
-<table>
-<tr>
-<td width="55%" valign="top">
-
-Sou estudante de **Ciência da Computação** na Univertix e passo o dia entre **automação, IA e código**: monto funis, workflows e integrações para empresas nos EUA e uso agentes de IA para construir mais rápido.
-
-Gosto de coisa que **resolve problema de verdade**: um processo que roda sozinho, um site que traz cliente, um jogo que dá vontade de abrir de novo.
-
-- 🎓 Ciência da Computação · TCC sobre **IA e o mercado de TI**
-- ⚙️ Automação de CRM e marketing com **GoHighLevel + IA**
-- 🌐 Trilha de **Técnico em Redes** · Cisco Networking Academy
-- 🎮 Dev de jogos com **Godot** nas horas livres
-- 🏃 Corrida de rua e Minecraft
-
-</td>
-<td width="45%" valign="top">
-
-```js
-const caua = {
-  local:  "Minas Gerais, BR",
-  curso:  "Ciência da Computação",
-  foco:   ["Automação", "IA", "Web", "Redes"],
-  agora:  ["TCC", "Docker", "Segurança de redes"],
-  ferramentas: ["Claude Code", "GHL", "Supabase"],
-  status: "construindo coisas 🚀"
-};
+```mermaid
+flowchart LR
+    T(["⚡ Trigger<br/>problema chato e repetitivo"]) --> M["🔍 Mapear<br/>o processo"]
+    M --> D{"🤖 Dá pra<br/>automatizar?"}
+    D -- sim --> W["⚙️ Workflow<br/>+ API + IA"]
+    D -- ainda não --> C["💻 Escrever<br/>o código"]
+    C --> W
+    W --> R(["✅ Roda sozinho<br/>e o time ganha horas"])
 ```
 
-</td>
-</tr>
-</table>
+## 🧾 `GET /sobre-mim`
 
-<br/>
+```json
+{
+  "nome": "Cauã Vitor",
+  "local": "Minas Gerais, BR",
+  "papel": "Automação de CRM e marketing com IA",
+  "clientes": "empresas de serviços nos EUA",
+  "faculdade": "Ciência da Computação @ Univertix",
+  "tcc": "IA e o mercado de TI no Brasil",
+  "trilha": "Técnico em Redes · Cisco Networking Academy",
+  "copiloto": "Claude Code",
+  "hobbies": ["Godot", "Minecraft", "corrida de rua"]
+}
+```
 
-![](https://img.shields.io/badge/—_STACK-2c5364?style=flat-square)
+## 🔀 Workflows em produção
 
-<div align="center">
-<img src="https://skillicons.dev/icons?i=ts,js,react,vite,astro,tailwind,html,css&theme=dark" /><br/>
-<img src="https://skillicons.dev/icons?i=python,java,supabase,docker,linux,debian,vercel,git&theme=dark" /><br/>
-<img src="https://skillicons.dev/icons?i=godot,threejs,arduino,obsidian,vscode,github&theme=dark" />
-</div>
+| Nó | O que faz |
+|---|---|
+| ⚡ **Gatilhos** | Formulário do site, webhook, resposta de SMS, mudança de etapa no funil |
+| 🤖 **IA no fluxo** | Classifica a intenção da resposta do lead e decide o próximo passo |
+| 🔁 **Follow-up** | Sequências de SMS e e-mail, reativação de base e lembretes |
+| 🧭 **Roteamento** | Rodízio de vendedores, dono do lead, SLA e passagem de card no pipeline |
+| 📊 **Medição** | Origem do lead (UTM / orgânico) e dashboards de resultado |
 
-<br/>
+## 🧩 Projetos
 
-![](https://img.shields.io/badge/—_PROJETOS-2c5364?style=flat-square)
+```diff
++ motor-ghl        Python · cria e publica workflows e dashboards no GoHighLevel via API, guiado por documento
++ painel-local     Python · central das subcontas: status, tarefas e verificações automáticas
++ sites-locais     Astro  · sites com SEO local que já entram direto no funil do CRM
++ ilha-perdida     Godot 4 · jogo mobile de fazenda e economia para Android
++ baymax           PWA    · assistente de saúde e bem-estar (Semana Acadêmica)
+```
 
-<table>
-<tr>
-<td width="50%" valign="top">
-
-### 🏝️ Ilha Perdida
-Jogo mobile para Android em **Godot 4**: plantio, criação de animais e economia.
-
-`GDScript` `Godot 4` `Android`
-
-</td>
-<td width="50%" valign="top">
-
-### 🧩 Motor de automação GHL
-Cria e publica workflows e dashboards no GoHighLevel via API, guiado por documento e operado por IA.
-
-`Python` `API` `Claude Code`
-
-</td>
-</tr>
-<tr>
-<td width="50%" valign="top">
-
-### 🩺 Baymax
-Assistente virtual de saúde e bem-estar (Semana Acadêmica). Fiz o front-end e transformei em **PWA**.
-
-`Front-end` `PWA`
-
-</td>
-<td width="50%" valign="top">
-
-### 🌐 Portfólio
-Meu site pessoal → [cauaravaiano.com.br](https://www.cauaravaiano.com.br)
-
-`React` `Vite` `TypeScript`
-
-</td>
-</tr>
-</table>
-
-<br/>
-
-![](https://img.shields.io/badge/—_NÚMEROS-2c5364?style=flat-square)
+## 🛠️ Stack
 
 <div align="center">
-<img height="160" src="https://github-readme-stats.vercel.app/api?username=CauaVitorDev&show_icons=true&count_private=true&hide_border=true&bg_color=0d1117&title_color=4FC3F7&icon_color=4FC3F7&text_color=c9d1d9" />
-<img height="160" src="https://github-readme-stats.vercel.app/api/top-langs/?username=CauaVitorDev&layout=compact&hide_border=true&bg_color=0d1117&title_color=4FC3F7&text_color=c9d1d9" />
+
+<img src="https://skillicons.dev/icons?i=python,ts,js,react,astro,supabase,vercel,docker,linux,git,godot,obsidian&theme=dark&perline=12" />
+
+![GoHighLevel](https://img.shields.io/badge/GoHighLevel-0d1117?style=for-the-badge&logoColor=3fb950)
+![Claude Code](https://img.shields.io/badge/Claude_Code-0d1117?style=for-the-badge&logo=anthropic&logoColor=3fb950)
+![Webhooks](https://img.shields.io/badge/Webhooks_&_APIs-0d1117?style=for-the-badge&logo=postman&logoColor=3fb950)
+![Cisco](https://img.shields.io/badge/Cisco_Networking-0d1117?style=for-the-badge&logo=cisco&logoColor=3fb950)
+
 </div>
 
-<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=0:2c5364,50:203a43,100:0f2027&height=110&section=footer" />
+## 📈 Execuções
+
+<div align="center">
+<img height="160" src="https://github-readme-stats.vercel.app/api?username=CauaVitorDev&show_icons=true&count_private=true&hide_border=true&bg_color=0d1117&title_color=3fb950&icon_color=3fb950&text_color=c9d1d9" />
+<img height="160" src="https://github-readme-stats.vercel.app/api/top-langs/?username=CauaVitorDev&layout=compact&hide_border=true&bg_color=0d1117&title_color=3fb950&text_color=c9d1d9" />
+</div>
+
+---
+
+<div align="center">
+
+```bash
+$ caua --contato
+→ portfólio: https://www.cauaravaiano.com.br
+→ se é repetitivo, dá pra automatizar. bora conversar.
+```
+
+<a href="https://www.cauaravaiano.com.br"><img src="https://img.shields.io/badge/▶_Acionar_contato-3fb950?style=for-the-badge" /></a>
+
+</div>
